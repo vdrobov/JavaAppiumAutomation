@@ -1,7 +1,6 @@
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -132,28 +131,80 @@ public class FirstTest {
 //                article_title
 //        );
 //    }
+//
+//    @Test
+//    public void testCompareSearchText()
+//    {
+//        waitForElementAndClick(
+//                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+//                "Cannot find 'Search Wikipedia' input",
+//                5
+//        );
+//
+//        WebElement text_element = waitForElementPresent(
+//                By.id("org.wikipedia:id/search_src_text"),
+//                "Cannot find search text field",
+//                5
+//        );
+//
+//        String search_text = text_element.getAttribute("text");
+//
+//        Assert.assertEquals(
+//                "We see unexpected text!",
+//                "Search…",
+//                search_text
+//        );
+//    }
 
     @Test
-    public void testCompareSearchText()
+    public void testCancelledSearchResult()
     {
         waitForElementAndClick(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                By.id("org.wikipedia:id/search_container"),
                 "Cannot find 'Search Wikipedia' input",
                 5
         );
 
-        WebElement text_element = waitForElementPresent(
-                By.id("org.wikipedia:id/search_src_text"),
-                "Cannot find search text field",
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text,'Search…')]"),
+                "Java",
+                "Cannot find search input",
                 5
         );
 
-        String search_text = text_element.getAttribute("text");
+        waitForElementPresent(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+                "Cannot find 'Object-oriented programming language' topic searching by 'Java'",
+                15
+        );
 
-        Assert.assertEquals(
-                "We see unexpected text!",
-                "Search…",
-                search_text
+        waitForElementPresent(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
+                "Cannot find 'Island of Indonesia' topic searching by 'Java'",
+                15
+        );
+
+        waitForElementAndClear(
+                By.id("org.wikipedia:id/search_src_text"),
+                "Cannot find search field",
+                5
+        );
+
+        waitForElementPresent(
+                By.id("org.wikipedia:id/search_empty_message"),
+                "Cannot find empty search message",
+                5
+        );
+
+        waitForElementNotPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+            "'Object-oriented programming language' topic is still present on the page",
+            5
+        );
+        waitForElementNotPresent(
+            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
+            "'Island of Indonesia' topic is still present on the page",
+            5
         );
     }
 

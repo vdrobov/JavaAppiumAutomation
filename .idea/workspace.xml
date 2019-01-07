@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d57f488d-c07c-41a1-b701-5006b41b1aac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FirstTest.java" afterPath="$PROJECT_DIR$/src/FirstTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="154" column="24" lean-forward="false" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
+            <state relative-caret-position="184">
+              <caret line="183" column="18" lean-forward="true" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,33 +110,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/" />
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.testCompareSearchText">
-    <configuration default="false" name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="JavaAppiumAutomation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.FirstTest.testCancelledSearchResult">
     <configuration default="false" name="FirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JavaAppiumAutomation" />
@@ -211,6 +187,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
       <option name="METHOD_NAME" value="testCompareSearchText" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FirstTest.testCancelledSearchResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="JavaAppiumAutomation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testCancelledSearchResult" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -429,19 +426,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.firstTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelSearch" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchText" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.firstTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelSearch" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchText" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelledSearchResult" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchText" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelSearch" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.firstTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelledSearchResult" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchText" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelSearch" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.firstTest" />
       </list>
     </recent_temporary>
   </component>
@@ -459,15 +456,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_firstTest - 2019.01.07 at 19h 14m 07s.xml">
-      <configuration name="FirstTest.firstTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testCancelSearch - 2019.01.07 at 19h 53m 10s.xml">
-      <configuration name="FirstTest.testCancelSearch" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_testCancelSearch - 2019.01.07 at 19h 54m 12s.xml">
-      <configuration name="FirstTest.testCancelSearch" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_testCancelSearch - 2019.01.07 at 20h 42m 06s.xml">
       <configuration name="FirstTest.testCancelSearch" configurationId="JUnit" />
     </history-entry>
@@ -476,6 +464,15 @@
     </history-entry>
     <history-entry file="FirstTest_testCancelSearch - 2019.01.07 at 21h 13m 45s.xml">
       <configuration name="FirstTest.testCancelSearch" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testCancelledSearchResult - 2019.01.07 at 22h 05m 27s.xml">
+      <configuration name="FirstTest.testCancelledSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testCancelledSearchResult - 2019.01.07 at 22h 06m 33s.xml">
+      <configuration name="FirstTest.testCancelledSearchResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testCancelledSearchResult - 2019.01.07 at 22h 09m 04s.xml">
+      <configuration name="FirstTest.testCancelledSearchResult" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FirstTest_testCompareArticleTitle - 2019.01.07 at 21h 15m 06s.xml">
       <configuration name="FirstTest.testCompareArticleTitle" configurationId="JUnit" />
@@ -491,7 +488,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -558,8 +555,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="154" column="24" lean-forward="false" selection-start-line="154" selection-start-column="24" selection-end-line="154" selection-end-column="24" />
+        <state relative-caret-position="184">
+          <caret line="183" column="18" lean-forward="true" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -623,7 +620,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
