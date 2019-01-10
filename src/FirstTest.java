@@ -132,31 +132,31 @@ public class FirstTest {
 //                article_title
 //        );
 //    }
-//
-//    @Test
-//    public void testCompareSearchText()
-//    {
-//        waitForElementAndClick(
-//                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-//                "Cannot find 'Search Wikipedia' input",
-//                5
-//        );
-//
-//        WebElement text_element = waitForElementPresent(
-//                By.id("org.wikipedia:id/search_src_text"),
-//                "Cannot find search text field",
-//                5
-//        );
-//
-//        String search_text = text_element.getAttribute("text");
-//
-//        Assert.assertEquals(
-//                "We see unexpected text!",
-//                "Search…",
-//                search_text
-//        );
-//    }
-//
+
+    @Test
+    public void testCompareSearchText()
+    {
+        waitForElementAndClick(
+                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
+                "Cannot find 'Search Wikipedia' input",
+                5
+        );
+
+        WebElement text_element = waitForElementPresent(
+                By.id("org.wikipedia:id/search_src_text"),
+                "Cannot find search text field",
+                5
+        );
+
+        String search_text = text_element.getAttribute("text");
+
+        Assert.assertEquals(
+                "We see unexpected text!",
+                "Search…",
+                search_text
+        );
+    }
+
 //    @Test
 //    public void testCancelledSearchResult()
 //    {
@@ -209,35 +209,35 @@ public class FirstTest {
 //        );
 //    }
 
-    @Test
-    public void testCompareSearchResult()
-    {
-        waitForElementAndClick(
-                By.id("org.wikipedia:id/search_container"),
-                "Cannot find 'Search Wikipedia' input",
-                5
-        );
-
-        waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                "Java",
-                "Cannot find search input",
-                5
-        );
-
-        WebElement title_element = waitForElementPresent(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@resource-id='org.wikipedia:id/page_list_item_title']"),
-                "Cannot find item title",
-                15
-        );
-
-        String item_title = title_element.getAttribute("text");
-
-        Assert.assertTrue(
-                "Item title don't contains 'Java' text",
-                item_title.contains("Java")
-        );
-    }
+//    @Test
+//    public void testCompareSearchResult()
+//    {
+//        waitForElementAndClick(
+//                By.id("org.wikipedia:id/search_container"),
+//                "Cannot find 'Search Wikipedia' input",
+//                5
+//        );
+//
+//        waitForElementAndSendKeys(
+//                By.xpath("//*[contains(@text,'Search…')]"),
+//                "Java",
+//                "Cannot find search input",
+//                5
+//        );
+//
+//        WebElement title_element = waitForElementPresent(
+//                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@resource-id='org.wikipedia:id/page_list_item_title']"),
+//                "Cannot find item title",
+//                15
+//        );
+//
+//        String item_title = title_element.getAttribute("text");
+//
+//        Assert.assertTrue(
+//                "Item title don't contains 'Java' text",
+//                item_title.contains("Java")
+//        );
+//    }
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
