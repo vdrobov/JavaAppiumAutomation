@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
 
 public class FirstTest {
 
@@ -177,6 +178,68 @@ public class FirstTest {
                 "Cannot find search text field",
                 5
         );
+    }
+
+    @Test
+    public void testCancelledSearchResult()
+    {
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/search_container"),
+                "Cannot find 'Search Wikipedia' input",
+                5
+        );
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text,'Search…')]"),
+                "Java",
+                "Cannot find search input",
+                5
+        );
+
+        List<WebElement> elements = driver.findElementsById("org.wikipedia:id/page_list_item_container");
+        int amount = elements.size();
+        Assert.assertTrue("Less than one element find",amount > 1);
+
+//        waitForElementPresent(
+//                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+//                "Cannot find 'Object-oriented programming language' topic searching by 'Java'",
+//                15
+//        );
+//
+//        waitForElementPresent(
+//                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
+//                "Cannot find 'Island of Indonesia' topic searching by 'Java'",
+//                15
+//        );
+
+        waitForElementAndClear(
+                By.id("org.wikipedia:id/search_src_text"),
+                "Cannot find search field",
+                5
+        );
+
+        waitForElementPresent(
+                By.id("org.wikipedia:id/search_empty_message"),
+                "Cannot find empty search message",
+                5
+        );
+
+        waitForElementNotPresent(
+                By.id("org.wikipedia:id/page_list_item_container"),
+                "Search results are still present on the page",
+                5
+        );
+
+//        waitForElementNotPresent(
+//            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
+//            "'Object-oriented programming language' topic is still present on the page",
+//            5
+//        );
+//        waitForElementNotPresent(
+//            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
+//            "'Island of Indonesia' topic is still present on the page",
+//            5
+//        );
     }
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
