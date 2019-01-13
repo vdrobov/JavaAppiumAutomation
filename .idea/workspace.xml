@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d57f488d-c07c-41a1-b701-5006b41b1aac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FirstTest.java" afterPath="$PROJECT_DIR$/src/FirstTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +21,8 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="213" column="43" lean-forward="false" selection-start-line="213" selection-start-column="43" selection-end-line="213" selection-end-column="43" />
+            <state relative-caret-position="31">
+              <caret line="218" column="23" lean-forward="false" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -457,9 +456,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testCompareSearchResult - 2019.01.08 at 22h 11m 58s.xml">
-      <configuration name="FirstTest.testCompareSearchResult" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_testCompareSearchResult - 2019.01.08 at 22h 16m 16s.xml">
       <configuration name="FirstTest.testCompareSearchResult" configurationId="JUnit" />
     </history-entry>
@@ -485,6 +481,9 @@
       <configuration name="FirstTest.testCompareSearchText" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FirstTest_testCompareSearchText - 2019.01.13 at 23h 23m 13s.xml">
+      <configuration name="FirstTest.testCompareSearchText" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testCompareSearchText - 2019.01.13 at 23h 30m 48s.xml">
       <configuration name="FirstTest.testCompareSearchText" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -586,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="213" column="43" lean-forward="false" selection-start-line="213" selection-start-column="43" selection-end-line="213" selection-end-column="43" />
+        <state relative-caret-position="31">
+          <caret line="218" column="23" lean-forward="false" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
