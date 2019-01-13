@@ -21,8 +21,8 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="218" column="23" lean-forward="false" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
+            <state relative-caret-position="102">
+              <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,7 +115,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/" />
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.testCompareSearchText">
+  <component name="RunManager" selected="JUnit.FirstTest.testCancelledSearchResult">
     <configuration default="false" name="FirstTest.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JavaAppiumAutomation" />
@@ -434,9 +434,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchText" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchResult" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelledSearchResult" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelledSearchResult" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchText" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareSearchResult" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.testCancelSearch" />
       </list>
@@ -456,14 +456,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testCompareSearchResult - 2019.01.08 at 22h 16m 16s.xml">
-      <configuration name="FirstTest.testCompareSearchResult" configurationId="JUnit" />
+    <history-entry file="FirstTest_testCancelledSearchResult - 2019.01.14 at 01h 06m 40s.xml">
+      <configuration name="FirstTest.testCancelledSearchResult" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCompareSearchResult - 2019.01.08 at 22h 23m 06s.xml">
-      <configuration name="FirstTest.testCompareSearchResult" configurationId="JUnit" />
+    <history-entry file="FirstTest_testCancelledSearchResult - 2019.01.14 at 01h 07m 45s.xml">
+      <configuration name="FirstTest.testCancelledSearchResult" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCompareSearchResult - 2019.01.08 at 22h 24m 27s.xml">
-      <configuration name="FirstTest.testCompareSearchResult" configurationId="JUnit" />
+    <history-entry file="FirstTest_testCancelledSearchResult - 2019.01.14 at 01h 27m 34s.xml">
+      <configuration name="FirstTest.testCancelledSearchResult" configurationId="JUnit" />
     </history-entry>
     <history-entry file="FirstTest_testCompareSearchText - 2019.01.07 at 21h 27m 30s.xml">
       <configuration name="FirstTest.testCompareSearchText" configurationId="JUnit" />
@@ -488,13 +488,13 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46687698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -585,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="218" column="23" lean-forward="false" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
+        <state relative-caret-position="102">
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

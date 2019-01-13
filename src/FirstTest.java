@@ -134,58 +134,6 @@ public class FirstTest {
     }
 
     @Test
-    public void testCancelledSearchResult()
-    {
-        waitForElementAndClick(
-                By.id("org.wikipedia:id/search_container"),
-                "Cannot find 'Search Wikipedia' input",
-                5
-        );
-
-        waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                "Java",
-                "Cannot find search input",
-                5
-        );
-
-        waitForElementPresent(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
-                "Cannot find 'Object-oriented programming language' topic searching by 'Java'",
-                15
-        );
-
-        waitForElementPresent(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
-                "Cannot find 'Island of Indonesia' topic searching by 'Java'",
-                15
-        );
-
-        waitForElementAndClear(
-                By.id("org.wikipedia:id/search_src_text"),
-                "Cannot find search field",
-                5
-        );
-
-        waitForElementPresent(
-                By.id("org.wikipedia:id/search_empty_message"),
-                "Cannot find empty search message",
-                5
-        );
-
-        waitForElementNotPresent(
-            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
-            "'Object-oriented programming language' topic is still present on the page",
-            5
-        );
-        waitForElementNotPresent(
-            By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Island of Indonesia']"),
-            "'Island of Indonesia' topic is still present on the page",
-            5
-        );
-    }
-
-    @Test
     public void testCompareSearchResult()
     {
         waitForElementAndClick(
