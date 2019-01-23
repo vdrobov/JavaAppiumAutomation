@@ -34,6 +34,12 @@ public class FirstTest {
         capabilities.setCapability("app","f:/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+        ScreenOrientation orientation = driver.getOrientation();
+        String test = orientation.value();
+        if (test == "LANDSCAPE") {
+            driver.rotate(ScreenOrientation.PORTRAIT);
+        }
     }
 
     @After

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d57f488d-c07c-41a1-b701-5006b41b1aac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FirstTest.java" afterPath="$PROJECT_DIR$/src/FirstTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,10 +23,12 @@
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="610" column="36" lean-forward="false" selection-start-line="610" selection-start-column="36" selection-end-line="610" selection-end-column="36" />
+            <state relative-caret-position="204">
+              <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1626#1627#0" expanded="true" />
+                <element signature="e#1655#1656#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,6 +85,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -111,7 +115,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -121,7 +124,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/" />
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.saveTwoArticlesToMyList">
+  <component name="RunManager" selected="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults">
     <configuration default="false" name="FirstTest.testAmountOfNotEmptySearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="JavaAppiumAutomation" />
@@ -440,9 +443,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.saveTwoArticlesToMyList" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.testCheckSearchArticleInBackground" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FirstTest.testChangeScreenOrientationOnSearchResults" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FirstTest.saveTwoArticlesToMyList" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FirstTest.testCheckSearchArticleInBackground" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.FirstTest.testAmountOfEmptySearch" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.FirstTest.testAmountOfNotEmptySearch" />
       </list>
@@ -462,35 +465,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 09m 41s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 15m 34s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 25m 44s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 30m 25s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 32m 26s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 36m 40s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 54m 08s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 00h 59m 26s.xml">
-      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 01h 06m 05s.xml">
       <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCheckSearchArticleInBackground - 2019.01.22 at 23h 11m 12s.xml">
-      <configuration name="FirstTest.testCheckSearchArticleInBackground" configurationId="JUnit" />
+    <history-entry file="FirstTest_saveTwoArticlesToMyList - 2019.01.23 at 01h 10m 38s.xml">
+      <configuration name="FirstTest.saveTwoArticlesToMyList" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 01h 37m 42s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 01h 41m 52s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 01h 44m 33s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 19h 04m 21s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 19h 14m 19s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 19h 19m 14s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 19h 46m 11s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest_testChangeScreenOrientationOnSearchResults - 2019.01.23 at 19h 49m 50s.xml">
+      <configuration name="FirstTest.testChangeScreenOrientationOnSearchResults" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -506,7 +509,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45741326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3785489" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -545,6 +548,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,6 +560,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -565,6 +572,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -575,6 +584,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -585,6 +596,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -595,6 +608,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -605,6 +620,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -615,6 +632,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -625,6 +644,20 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -645,10 +678,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="610" column="36" lean-forward="false" selection-start-line="610" selection-start-column="36" selection-end-line="610" selection-end-column="36" />
+        <state relative-caret-position="204">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1626#1627#0" expanded="true" />
+            <element signature="e#1655#1656#0" expanded="true" />
           </folding>
         </state>
       </provider>
