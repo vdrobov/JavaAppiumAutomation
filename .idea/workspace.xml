@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d57f488d-c07c-41a1-b701-5006b41b1aac" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/SearchTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/SearchTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/MyListsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/MyListsTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="102" column="61" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="61" />
+            <state relative-caret-position="1013">
+              <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,10 +37,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
+        <entry file="file://$PROJECT_DIR$/src/tests/SearchTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+            <state relative-caret-position="-9">
+              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tests/SearchTests.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="625">
+              <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,10 +63,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="82" column="41" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="41" />
+            <state relative-caret-position="388">
+              <caret line="39" selection-start-line="38" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/NavigationUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="10" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tests/MyListsTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="60" column="61" lean-forward="true" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-356">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
+                <element signature="e#855#856#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,16 +148,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/lib/ui/MainPageObject.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" />
         <option value="$PROJECT_DIR$/src/lib/ui/NavigationUI.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" />
         <option value="$PROJECT_DIR$/src/lib/CoreTestCase.java" />
         <option value="$PROJECT_DIR$/src/tests/ArticleTests.java" />
-        <option value="$PROJECT_DIR$/src/tests/MyListsTests.java" />
         <option value="$PROJECT_DIR$/src/tests/ChangeAppConditionTests.java" />
-        <option value="$PROJECT_DIR$/src/FirstTest.java" />
-        <option value="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" />
         <option value="$PROJECT_DIR$/src/tests/SearchTests.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/SearchPageObject.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java" />
+        <option value="$PROJECT_DIR$/src/tests/MyListsTests.java" />
+        <option value="$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java" />
+        <option value="$PROJECT_DIR$/src/FirstTest.java" />
       </list>
     </option>
   </component>
@@ -169,11 +226,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549122125066" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549142771081" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -187,7 +245,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTests.testCancelledSearchResult">
+  <component name="RunManager" selected="JUnit.MyListsTests.testSaveTwoArticlesToMyList">
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -227,39 +285,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ArticleTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ArticleTests.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ArticleTests" />
-      <option name="METHOD_NAME" value="testCompareArticleTitle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FirstTest.testCompareSearchResultMatching" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -276,6 +301,40 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
       <option name="METHOD_NAME" value="testSearchResultsContainsMultipleMatching" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListsTests.testSaveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTests" />
+      <option name="METHOD_NAME" value="testSaveFirstArticleToMyList" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyListsTests.testSaveTwoArticlesToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyListsTests" />
+      <option name="METHOD_NAME" value="testSaveTwoArticlesToMyList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -358,19 +417,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ArticleTests" />
-      <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
       <item itemvalue="JUnit.FirstTest.testSearchResultsContainsMultipleMatching" />
       <item itemvalue="JUnit.FirstTest.testCompareSearchResultMatching" />
       <item itemvalue="JUnit.SearchTests.testCancelledSearchResult" />
+      <item itemvalue="JUnit.MyListsTests.testSaveTwoArticlesToMyList" />
+      <item itemvalue="JUnit.MyListsTests.testSaveFirstArticleToMyList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyListsTests.testSaveTwoArticlesToMyList" />
+        <item itemvalue="JUnit.MyListsTests.testSaveFirstArticleToMyList" />
         <item itemvalue="JUnit.SearchTests.testCancelledSearchResult" />
         <item itemvalue="JUnit.FirstTest.testCompareSearchResultMatching" />
         <item itemvalue="JUnit.FirstTest.testSearchResultsContainsMultipleMatching" />
-        <item itemvalue="JUnit.ArticleTests" />
-        <item itemvalue="JUnit.ArticleTests.testCompareArticleTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -388,42 +447,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testSearchResultsContainsMultipleMatching - 2019.02.02 at 16h 33m 23s.xml">
-      <configuration name="FirstTest.testSearchResultsContainsMultipleMatching" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveTwoArticlesToMyList - 2019.02.02 at 18h 37m 44s.xml">
+      <configuration name="MyListsTests.testSaveTwoArticlesToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchResultsContainsMultipleMatching - 2019.02.02 at 16h 34m 53s.xml">
-      <configuration name="FirstTest.testSearchResultsContainsMultipleMatching" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveTwoArticlesToMyList - 2019.02.02 at 18h 38m 33s.xml">
+      <configuration name="MyListsTests.testSaveTwoArticlesToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchResultsContainsMultipleMatching - 2019.02.02 at 16h 35m 53s.xml">
-      <configuration name="FirstTest.testSearchResultsContainsMultipleMatching" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveTwoArticlesToMyList - 2019.02.02 at 18h 39m 30s.xml">
+      <configuration name="MyListsTests.testSaveTwoArticlesToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchResultsContainsMultipleMatching - 2019.02.02 at 16h 36m 24s.xml">
-      <configuration name="FirstTest.testSearchResultsContainsMultipleMatching" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveTwoArticlesToMyList - 2019.02.02 at 18h 42m 05s.xml">
+      <configuration name="MyListsTests.testSaveTwoArticlesToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSearchResultsContainsMultipleMatching - 2019.02.02 at 16h 38m 41s.xml">
-      <configuration name="FirstTest.testSearchResultsContainsMultipleMatching" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveTwoArticlesToMyList - 2019.02.02 at 19h 20m 45s.xml">
+      <configuration name="MyListsTests.testSaveTwoArticlesToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCompareSearchResultMatching - 2019.02.02 at 16h 43m 32s.xml">
-      <configuration name="FirstTest.testCompareSearchResultMatching" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveFirstArticleToMyList - 2019.02.02 at 19h 22m 42s.xml">
+      <configuration name="MyListsTests.testSaveFirstArticleToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCompareSearchResultMatching - 2019.02.02 at 16h 46m 21s.xml">
-      <configuration name="FirstTest.testCompareSearchResultMatching" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveFirstArticleToMyList - 2019.02.02 at 22h 45m 14s.xml">
+      <configuration name="MyListsTests.testSaveFirstArticleToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchTests_testCancelledSearchResult - 2019.02.02 at 17h 14m 51s.xml">
-      <configuration name="SearchTests.testCancelledSearchResult" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveFirstArticleToMyList - 2019.02.02 at 22h 48m 56s.xml">
+      <configuration name="MyListsTests.testSaveFirstArticleToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchTests_testCancelledSearchResult - 2019.02.02 at 17h 17m 46s.xml">
-      <configuration name="SearchTests.testCancelledSearchResult" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveFirstArticleToMyList - 2019.02.02 at 22h 59m 50s.xml">
+      <configuration name="MyListsTests.testSaveFirstArticleToMyList" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SearchTests_testCancelledSearchResult - 2019.02.02 at 17h 19m 42s.xml">
-      <configuration name="SearchTests.testCancelledSearchResult" configurationId="JUnit" />
+    <history-entry file="MyListsTests_testSaveTwoArticlesToMyList - 2019.02.02 at 23h 01m 07s.xml">
+      <configuration name="MyListsTests.testSaveTwoArticlesToMyList" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1248" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1246" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49942857" visible="true" weight="0.24543947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49942857" visible="true" weight="0.24584718" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Nl-Palette" order="3" />
@@ -513,28 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/ArticleTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/CoreTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -545,19 +582,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/ArticleTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2190">
-          <caret line="161" column="5" selection-start-line="154" selection-start-column="4" selection-end-line="161" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/ui/NavigationUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="315">
           <caret line="21" column="10" selection-start-line="17" selection-start-column="8" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -567,45 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/MyListsTests.java">
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/MainPageObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/ArticlePageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#855#856#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="102" column="61" selection-start-line="102" selection-start-column="22" selection-end-line="102" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="82" column="41" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="41" />
+        <state relative-caret-position="625">
+          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -614,8 +631,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/SearchTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="59" column="28" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="-9">
+          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/SearchPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="39" selection-start-line="38" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/ui/MyListsPageObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="10" lean-forward="true" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/MyListsTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="60" column="61" lean-forward="true" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1013">
+          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

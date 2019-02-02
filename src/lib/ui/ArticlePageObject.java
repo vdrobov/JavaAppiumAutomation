@@ -14,7 +14,8 @@ public class ArticlePageObject extends MainPageObject{
         ADD_TO_MY_LIST_OVERLAY = "org.wikipedia:id/onboarding_button",
         MY_LIST_NAME_INPUT = "org.wikipedia:id/text_input",
         MY_LIST_OK_BUTTON = "//*[@text='OK']",
-        CLOSE_ARTICLE_BUTTON = "//android.widget.ImageButton[@content-desc='Navigate up']";
+        CLOSE_ARTICLE_BUTTON = "//android.widget.ImageButton[@content-desc='Navigate up']",
+        SEARCH_MENU_BUTTON = "org.wikipedia:id/menu_page_search";
 
     public ArticlePageObject(AppiumDriver driver)
     {
@@ -49,9 +50,15 @@ public class ArticlePageObject extends MainPageObject{
                 5
         );
 
-        this.waitForElementAndClick(
+        this.waitForElementPresent(
                 By.xpath(OPTIONS_ADD_TO_MY_LIST_BUTTON),
                 "Cannot find option to add article to reading list",
+                5
+        );
+
+        this.waitForElementAndClick(
+                By.xpath(OPTIONS_ADD_TO_MY_LIST_BUTTON),
+                "Cannot click option to add article to reading list",
                 5
         );
 
@@ -81,11 +88,41 @@ public class ArticlePageObject extends MainPageObject{
         );
     }
 
+    public void addArticleToExistingList(String name_of_folder)
+    {
+        this.waitForElementAndClick(
+                By.xpath(OPTIONS_BUTTON),
+                "Cannot find button to open article options",
+                5
+        );
+
+        this.waitForElementAndClick(
+                By.xpath(OPTIONS_ADD_TO_MY_LIST_BUTTON),
+                "Cannot find option to add article to reading list",
+                5
+        );
+
+        this.waitForElementAndClick(
+                By.xpath("//*[@text='" + name_of_folder + "']"),
+                "Cannot find created folder",
+                5
+        );
+    }
+
     public void closeArticle()
     {
         this.waitForElementAndClick(
                 By.xpath(CLOSE_ARTICLE_BUTTON),
                 "Cannot close article, cannot find X link",
+                5
+        );
+    }
+
+    public void moveToSearchPage()
+    {
+        this.waitForElementAndClick(
+                By.id(SEARCH_MENU_BUTTON),
+                "Cannot press menu search button",
                 5
         );
     }
