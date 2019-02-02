@@ -18,47 +18,6 @@ public class FirstTest extends CoreTestCase{
     }
 
     @Test
-    public void testCompareSearchResult()
-    {
-        MainPageObject.waitForElementAndClick(
-                By.id("org.wikipedia:id/search_container"),
-                "Cannot find 'Search Wikipedia' input",
-                5
-        );
-
-        MainPageObject.waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                "Java",
-                "Cannot find search input",
-                5
-        );
-
-//        List<WebElement> elements = driver.findElementsByXPath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@resource-id='org.wikipedia:id/page_list_item_title']");
-//        for (int i = 0; i < List.size(); i++)
-//        {
-//            E element = list.get(i);
-//        }
-//        String item_title = element.getAttribute("text");
-//        assertTrue(
-//                "Item title don't contains 'Java' text",
-//                item_title.contains("Java")
-//        );
-
-        WebElement title_element = MainPageObject.waitForElementPresent(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@resource-id='org.wikipedia:id/page_list_item_title']"),
-                "Cannot find item title",
-                15
-        );
-
-        String item_title = title_element.getAttribute("text");
-
-        assertTrue(
-                "Item title don't contains 'Java' text",
-                item_title.contains("Java")
-        );
-    }
-
-    @Test
     public void testCompareSearchText() {
         MainPageObject.waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
@@ -77,22 +36,21 @@ public class FirstTest extends CoreTestCase{
     @Test
     public void testCancelledSearchResult()
     {
-        MainPageObject.waitForElementAndClick(
-                By.id("org.wikipedia:id/search_container"),
-                "Cannot find 'Search Wikipedia' input",
-                5
+        SearchPageObject SearchPageObject = new SearchPageObject(driver);
+
+        SearchPageObject.initSearchInput();
+        String search_line = "Java";
+        SearchPageObject.typeSearchLine(search_line);
+        int amount_of_search_results = SearchPageObject.getAmountOfFoundArticles();
+
+        assertTrue(
+                "We found too few results!",
+                amount_of_search_results > 0
         );
 
-        MainPageObject.waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                "Java",
-                "Cannot find search input",
-                5
-        );
-
-        List<WebElement> elements = driver.findElementsById("org.wikipedia:id/page_list_item_container");
-        int amount = elements.size();
-        assertTrue("Less than one element find",amount > 1);
+//        List<WebElement> elements = driver.findElementsById("org.wikipedia:id/page_list_item_container");
+//        int amount = elements.size();
+//        assertTrue("Less than one element find",amount > 1);
 
         MainPageObject.waitForElementAndClear(
                 By.id("org.wikipedia:id/search_src_text"),

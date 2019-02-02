@@ -2,6 +2,7 @@ package lib.ui;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class SearchPageObject extends MainPageObject{
 
@@ -82,4 +83,13 @@ public class SearchPageObject extends MainPageObject{
     {
         this.assertElementNotPresent(By.xpath(SEARCH_RESULT_ELEMENT), "We supposed not to find any results");
     }
+
+//    public void clearSearchResult()
+//    {
+//        this.waitForElementAndClear(
+//                By.xpath(MY_LISTS_LINK),
+//                "Cannot find navigation button to My list",
+//                5
+//        );
+//    }
 }
