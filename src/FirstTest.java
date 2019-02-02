@@ -18,6 +18,48 @@ public class FirstTest extends CoreTestCase{
     }
 
     @Test
+    public void testCompareSearchResultMatching()
+    {
+        String textForSearching = "Java";
+
+        MainPageObject.waitForElementAndClick(
+                By.id("org.wikipedia:id/search_container"),
+                "Cannot find 'Search Wikipedia' input",
+                5
+        );
+
+        MainPageObject.waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text,'Search…')]"),
+                textForSearching,
+                "Cannot find search input",
+                5
+        );
+
+        MainPageObject.waitForElementPresent(
+                By.id("org.wikipedia:id/page_list_item_container"),
+                "Cannot find search result",
+                15
+        );
+
+        List<WebElement> elementsList = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
+
+        int counter = 0;
+
+        for (WebElement element: elementsList)
+        {
+            if (element.getAttribute("text").contains(textForSearching))
+                counter += 1;
+            else
+                System.out.println("Searched text is not presented in all search result");
+        }
+
+        assertTrue(
+                "Searched text " + textForSearching + "is not presented in all search result",
+                elementsList.size() == counter
+        );
+    }
+
+    @Test
     public void testCompareSearchText() {
         MainPageObject.waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
