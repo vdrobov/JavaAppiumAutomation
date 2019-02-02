@@ -76,44 +76,6 @@ public class FirstTest extends CoreTestCase{
     }
 
     @Test
-    public void testCancelledSearchResult()
-    {
-        SearchPageObject SearchPageObject = new SearchPageObject(driver);
-
-        SearchPageObject.initSearchInput();
-        String search_line = "Java";
-        SearchPageObject.typeSearchLine(search_line);
-        int amount_of_search_results = SearchPageObject.getAmountOfFoundArticles();
-
-        assertTrue(
-                "We found too few results!",
-                amount_of_search_results > 0
-        );
-
-//        List<WebElement> elements = driver.findElementsById("org.wikipedia:id/page_list_item_container");
-//        int amount = elements.size();
-//        assertTrue("Less than one element find",amount > 1);
-
-        MainPageObject.waitForElementAndClear(
-                By.id("org.wikipedia:id/search_src_text"),
-                "Cannot find search field",
-                5
-        );
-
-        MainPageObject.waitForElementPresent(
-                By.id("org.wikipedia:id/search_empty_message"),
-                "Cannot find empty search message",
-                5
-        );
-
-        MainPageObject.waitForElementNotPresent(
-                By.id("org.wikipedia:id/page_list_item_container"),
-                "Search results are still present on the page",
-                5
-        );
-    }
-
-    @Test
     public void testSaveTwoArticlesToMyList()
     {
         MainPageObject.waitForElementAndClick(

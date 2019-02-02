@@ -12,7 +12,8 @@ public class SearchPageObject extends MainPageObject{
         SEARCH_CANCEL_BUTTON = "org.wikipedia:id/search_close_btn",
         SEARCH_RESULT_BY_SUBSTRING_TPL = "//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='{SUBSTRING}']",
         SEARCH_RESULT_ELEMENT = "//*[@resource-id='org.wikipedia:id/search_results_list']/*[@resource-id='org.wikipedia:id/page_list_item_container']",
-        SEARCH_EMPTY_RESULT_ELEMENT = "//*[@text='No results found']";
+        SEARCH_EMPTY_RESULT_ELEMENT = "//*[@text='No results found']",
+        SEARCH_EMPTY_MESSAGE_ELEMENT = "org.wikipedia:id/search_empty_message";
 
     public SearchPageObject(AppiumDriver driver)
     {
@@ -79,17 +80,13 @@ public class SearchPageObject extends MainPageObject{
         this.waitForElementPresent(By.xpath(SEARCH_EMPTY_RESULT_ELEMENT), "Cannot find empty result element.", 15 );
     }
 
+    public void waitForEmptySearchMessage()
+    {
+        this.waitForElementPresent(By.id(SEARCH_EMPTY_MESSAGE_ELEMENT), "Cannot find empty search message.", 15 );
+    }
+
     public void assertThereIsNoResultOfSearch()
     {
         this.assertElementNotPresent(By.xpath(SEARCH_RESULT_ELEMENT), "We supposed not to find any results");
     }
-
-//    public void clearSearchResult()
-//    {
-//        this.waitForElementAndClear(
-//                By.xpath(MY_LISTS_LINK),
-//                "Cannot find navigation button to My list",
-//                5
-//        );
-//    }
 }
