@@ -27,6 +27,15 @@ public class ArticlePageObject extends MainPageObject{
         return this.waitForElementPresent(By.id(TITLE), "Cannot find article title on page", 15);
     }
 
+    public void assertTitlePresent(String error_message)
+    {
+        int amount_of_elements = getAmountOfElements(By.id(TITLE));
+        if (amount_of_elements == 0) {
+            String default_message = "An element '" + TITLE + "' supposed to be present.";
+            throw new AssertionError(default_message + " " + error_message);
+        }
+    }
+
     public String getArticleTitle()
     {
         WebElement title_element = waitForTitleElement();
