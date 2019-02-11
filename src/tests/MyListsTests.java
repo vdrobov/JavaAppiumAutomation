@@ -22,7 +22,8 @@ public class MyListsTests extends CoreTestCase
         ArticlePageObject.waitForTitleElement();
         String article_title = ArticlePageObject.getArticleTitle();
         String name_of_folder = "Learning programming";
-        ArticlePageObject.addArticleToMyList(name_of_folder);
+        ArticlePageObject.clickAddArticleToMyList();
+        ArticlePageObject.fillMyListName(name_of_folder);
         ArticlePageObject.closeArticle();
 
         NavigationUI NavigationUI = new NavigationUI(driver);
@@ -47,7 +48,8 @@ public class MyListsTests extends CoreTestCase
         ArticlePageObject.waitForTitleElement();
         String article_title1 = ArticlePageObject.getArticleTitle();
         String name_of_folder = "Folder";
-        ArticlePageObject.addArticleToMyList(name_of_folder);
+        ArticlePageObject.clickAddArticleToMyList();
+        ArticlePageObject.fillMyListName(name_of_folder);
         ArticlePageObject.moveToSearchPage();
 
         SearchPageObject.clickByRecentSearchResultWithSubstring(search_line);
@@ -55,7 +57,8 @@ public class MyListsTests extends CoreTestCase
 
         ArticlePageObject.waitForTitleElement();
         String article_title2_before_saving = ArticlePageObject.getArticleTitle();
-        ArticlePageObject.addArticleToExistingList(name_of_folder);
+        ArticlePageObject.clickAddArticleToMyList();
+        ArticlePageObject.clickByFolderWithSubstring(name_of_folder);
         ArticlePageObject.closeArticle();
 
         NavigationUI NavigationUI = new NavigationUI(driver);
