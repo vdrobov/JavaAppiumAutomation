@@ -9,10 +9,10 @@ public class iOSArticlePageObject extends ArticlePageObject
         TITLE = "id:Java (programming language)";
         FOOTER_ELEMENT = "id:View article in browser";
         OPTIONS_ADD_TO_MY_LIST_BUTTON = "id:Save for later";
-        CLOSE_ARTICLE_BUTTON = "id:Back";
+//        CLOSE_ARTICLE_BUTTON = "id:Back";
+        CLOSE_ARTICLE_BUTTON = "xpath://XCUIElementTypeButton[@name='Wikipedia, return to Explore']";
         SEARCH_MENU_BUTTON = "id:Search Wikipedia";
         SYNC_POPUP_CLOSE_BUTTON = "id:places auth close";
-//        NAME_OF_FOLDER_BY_SUBSTRING_TPL = "xpath://*[@text='{SUBSTRING}']";
     }
 
     public iOSArticlePageObject(AppiumDriver driver)
