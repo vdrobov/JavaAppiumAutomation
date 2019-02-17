@@ -12,9 +12,12 @@ import lib.ui.factories.NavigationUIFactory;
 import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
+import java.util.List;
+
 public class MyListsTests extends CoreTestCase
 {
     private static final String name_of_folder = "Learning programming";
+    private static final String search_line = "Java";
 
     @Test
     public void testSaveFirstArticleToMyList()
@@ -22,7 +25,7 @@ public class MyListsTests extends CoreTestCase
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
-        SearchPageObject.typeSearchLine("Java");
+        SearchPageObject.typeSearchLine(search_line);
         SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
@@ -56,43 +59,68 @@ public class MyListsTests extends CoreTestCase
         SearchPageObject SearchPageObject = SearchPageObjectFactory.get(driver);
 
         SearchPageObject.initSearchInput();
-        String search_line = "Java";
         SearchPageObject.typeSearchLine(search_line);
         SearchPageObject.clickByArticleWithSubstring("Object-oriented programming language");
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
-        String article_title1 = ArticlePageObject.getArticleTitle();
-        String name_of_folder = "Folder";
-        ArticlePageObject.clickAddArticleToMyList();
-        ArticlePageObject.fillMyListName(name_of_folder);
+        String article_title = ArticlePageObject.getArticleTitle();
+
+        if (Platform.getInstance().isAndroid()){
+            String name_of_folder = "Folder";
+            ArticlePageObject.clickAddArticleToMyList();
+            ArticlePageObject.fillMyListName(name_of_folder);
+        } else {
+            ArticlePageObject.addArticlesToMySaved();
+            ArticlePageObject.closeSyncPopup();
+        }
+
         ArticlePageObject.moveToSearchPage();
 
-        SearchPageObject.clickByRecentSearchResultWithSubstring(search_line);
+        if (Platform.getInstance().isAndroid()){
+            SearchPageObject.clickByRecentSearchResultWithSubstring(search_line);
+        }
+
+        SearchPageObject.waitForSearchResult("Island of Indonesia");
         SearchPageObject.clickByArticleWithSubstring("Island of Indonesia");
 
         ArticlePageObject.waitForTitleElement();
-        String article_title2_before_saving = ArticlePageObject.getArticleTitle();
-        ArticlePageObject.clickAddArticleToMyList();
-        ArticlePageObject.clickByFolderWithSubstring(name_of_folder);
+
+        if (Platform.getInstance().isAndroid()){
+            ArticlePageObject.clickAddArticleToMyList();
+            ArticlePageObject.clickByFolderWithSubstring(name_of_folder);
+        } else {
+            ArticlePageObject.addArticlesToMySaved();
+        }
+
         ArticlePageObject.closeArticle();
 
         NavigationUI NavigationUI = NavigationUIFactory.get(driver);
         NavigationUI.clickMyLists();
 
         MyListsPageObject MyListsPageObject = MyListsPageObjectFactory.get(driver);
-        MyListsPageObject.openFolderByName(name_of_folder);
-        MyListsPageObject.swipeByArticleToDelete(article_title1);
-        MyListsPageObject.waitForArticleToDisappearByTitle(article_title1);
-        MyListsPageObject.clickByArticleByTitle(article_title2_before_saving);
 
-        ArticlePageObject.waitForTitleElement();
-        String article_title2_after_saving = ArticlePageObject.getArticleTitle();
+        if (Platform.getInstance().isAndroid()){
+            MyListsPageObject.openFolderByName(name_of_folder);
+        }
+
+        List<String> listOfTitlesBeforeDelete = MyListsPageObject.getArticlesList();
+
+        MyListsPageObject.swipeByArticleToDelete(article_title);
+        MyListsPageObject.waitForArticleToDisappearByTitle(article_title);
+
+        List<String> listOfTitlesAfterDelete = MyListsPageObject.getArticlesList();
 
         assertEquals(
-                "Article title have been changed after adding to reading list",
-                article_title2_before_saving,
-                article_title2_after_saving
+                "Number of articles is wrong",
+                listOfTitlesAfterDelete.size(),
+                1
+        );
+
+        assertEquals(
+                "Number of articles is wrong",
+                listOfTitlesAfterDelete.get(0),
+                listOfTitlesBeforeDelete.get(0)
         );
     }
 }
