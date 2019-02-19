@@ -12,6 +12,8 @@ import lib.ui.factories.NavigationUIFactory;
 import lib.ui.factories.SearchPageObjectFactory;
 import org.junit.Test;
 
+import java.util.List;
+
 public class MyListsTests extends CoreTestCase
 {
     private static final String name_of_folder = "Learning programming";
@@ -62,7 +64,7 @@ public class MyListsTests extends CoreTestCase
 
         ArticlePageObject ArticlePageObject = ArticlePageObjectFactory.get(driver);
         ArticlePageObject.waitForTitleElement();
-        String article_title1 = ArticlePageObject.getArticleTitle();
+        String article_title = ArticlePageObject.getArticleTitle();
 
         if (Platform.getInstance().isAndroid()){
             String name_of_folder = "Folder";
@@ -83,7 +85,6 @@ public class MyListsTests extends CoreTestCase
         SearchPageObject.clickByArticleWithSubstring("Island of Indonesia");
 
         ArticlePageObject.waitForTitleElement();
-        String article_title2_before_saving = ArticlePageObject.getArticleTitle();
 
         if (Platform.getInstance().isAndroid()){
             ArticlePageObject.clickAddArticleToMyList();
@@ -103,18 +104,23 @@ public class MyListsTests extends CoreTestCase
             MyListsPageObject.openFolderByName(name_of_folder);
         }
 
-        MyListsPageObject.swipeByArticleToDelete(article_title1);
-        MyListsPageObject.waitForArticleToDisappearByTitle(article_title1);
+        List<String> listOfTitlesBeforeDelete = MyListsPageObject.getArticlesList();
 
-        MyListsPageObject.clickByArticleByTitle(article_title2_before_saving);
+        MyListsPageObject.swipeByArticleToDelete(article_title);
+        MyListsPageObject.waitForArticleToDisappearByTitle(article_title);
 
-        ArticlePageObject.waitForTitleElement();
-        String article_title2_after_saving = ArticlePageObject.getArticleTitle();
+        List<String> listOfTitlesAfterDelete = MyListsPageObject.getArticlesList();
 
         assertEquals(
-                "Article title have been changed after adding to reading list",
-                article_title2_before_saving,
-                article_title2_after_saving
+                "Number of articles is wrong",
+                listOfTitlesAfterDelete.size(),
+                1
+        );
+
+        assertEquals(
+                "Number of articles is wrong",
+                listOfTitlesAfterDelete.get(0),
+                listOfTitlesBeforeDelete.get(0)
         );
     }
 }
